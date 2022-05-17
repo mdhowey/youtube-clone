@@ -10,9 +10,9 @@ const VideoList = ({ videos, onVideoSelect }) => {
       key={index} 
     />);
   });
-  // TODO Left off at 131
+  
   return (
-    <div className="container videoList__container">
+    <div className="videoList__container">
       {foundVideos}  
     </div>
   );
