@@ -1,7 +1,18 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [],
-  "start_url": ".",
+  "short_name": "HT",
+  "name": "HoweyTube",
+  "icons": [
+    {
+      "src":"./howeytube-logo-192x192.png",
+      "type":"image/png",
+      "sizes":"192x192"
+    },
+    {
+      "src": "./howeytube-logo-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
   "display": "standalone"
 }
