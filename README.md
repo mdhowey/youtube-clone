@@ -2,7 +2,7 @@
 
 This is a simple YouTube clone using React.
 
-![Starting state](https://ibb.co/VWsLMfs)
+[![youtube-clone.png](https://i.postimg.cc/dQW3Vz73/youtube-clone.png)](https://postimg.cc/V5Cm7ZWP)
 
 ## Tech
 Functional components within React
