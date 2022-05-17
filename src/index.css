@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #aee4f0;
+  --color-black: #1b1b1b;
+  --color-white: #ffffff;
+  --color-primary: #0286a3;
+  --color-secondary: #ffb573;
+
+  /* Transition */
+  --transition: all 0.3s ease-in-out;
+
+  /* Widths --> Media Queries*/
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--color-dark);
+  line-height: 1.7;
+  background-color: var(--color-bg);
+  height: 100vh;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ General ~~~~~~~~~~~~~~~~~~~~ */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.app__container {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-black);
+}
+
+/* Buttons */
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-dark);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-secondary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Captions */
+.text-small {
+  color: var(--color-black);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* Hidden */
+.is-hidden {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~ Media Query (Tablets) ~~~~~~~~~~~~~ */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* ~~~~~~~~~~~~~ Media Query (Mobile) ~~~~~~~~~~~~~ */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+}
